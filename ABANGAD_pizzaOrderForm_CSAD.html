@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="">
+    <meta charset="utf-8">
+    <title>Order form</title>
+    <style type="text/css">
+    fieldset{
+        border: solid 2px black;
+        border-radius: 6px;
+        min-width: 200px;
+        background-image: url('https://www.htmlcsscolor.com/preview/gallery/CC0000.png');
+    }
+    fieldset.inside{
+        margin: 5em 8em;
+        padding: 1em 1em;
+        border: solid 2px black;
+        border-radius: 6px;
+        min-width: 200px;
+        background: fixed;
+        background-color: white;
+        margin-left: 14%;
+        background-image: url('https://colorate.azurewebsites.net/SwatchColor/188BEF');
+      }
+      input[type="radio"]{
+        margin-left:10px;
+        margin-right: 0;
+        margin-top: 0;
+        background-color: yellow;
+      }
+      input[type="checkbox"]{
+        margin-left:10px;
+        margin-right: 0;
+        margin-top: 0;
+      }
+      input[type="text"]{
+        background-color: white;
+        width: 55%;
+        height: 2em;
+      }
+      input[type="text"].contact{
+        background-color: white;
+        width: 20%;
+        height: 2em;
+      }
+      input[type="text"].qty{
+        background-color: white;
+        width: 5%;
+        height: 1.5em;
+      }
+      
+      input[type="submit"]{
+        font-size: 30px;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-bottom: 0%;
+        background-color: white;
+        color: red;
+        border-radius: 10px;
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: 10%;
+      }
+      input[type="submit"]:hover{
+          box-shadow: 0px 0px 10px 10px lightgreen;
+          color: green;
+      }
+      h2:hover{
+          box-shadow: 0px 0px 10px 10px green;
+          color: green;
+      }
+      input[type="checkbox"]:hover{
+          box-shadow: 0px 0px 10px 10px lightgreen;
+          color: green;
+      }
+      input[type="radio"]:hover{
+          box-shadow: 0px 0px 10px 10px lightgreen;
+          color: green;
+      }
+      fieldset {
+        width: 70%;
+        min-width:320px;
+        margin:auto;
+      }
+      .top{
+          display: inline-block;
+          margin-top: 2em;
+      }
+      select{
+          margin-top: 0;
+          background-color: white;
+      }
+      label.top{
+          margin-left: 2em;
+      }
+      textarea{
+      min-height: 8em;
+      min-width: 70%;
+      max-width: fit-content;
+      max-height: max-content;
+      background-color: white;
+      border: double 5px darkblue;
+      box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    }
+    label,textarea,p{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+        color: white;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+    }
+    h3{
+        font-size: 40px;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-bottom: 0%;
+        background-color: white;
+        color: red;
+        border-radius: 10px;
+    }
+    h3.order{
+        font-size: 20px;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+    h2{
+        font-size: 30px;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-bottom: 0%;
+        background-color: white;
+        color: red;
+        border-radius: 10px;
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: 10%;
+        margin-top: 10%;
+    }
+    a{
+      text-decoration: none;
+    }
+    h1{
+        font-size: 40px;
+        text-align: center;
+        background-color: #fa8128;
+        color: white;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        border: 5px double;
+        border-radius: 10px;
+    }
+
+    img{
+    width:160px; 
+    height:160px;
+    opacity: .75;
+    border-radius: 30px;
+    margin: auto;
+    margin-bottom: 10%;
+    display: inline-block;
+    }
+
+    img.icon{
+    width:80px; 
+    height:65px;
+    opacity: 1;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    margin: auto;
+    display: inline-block;
+    }
+    img.icons{
+    width:150px; 
+    height: 100px;
+    opacity: 1;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    margin: auto;
+    display: inline-block;
+    }
+    div.center{
+        margin-left: 20%;
+    }
+    div.bun{
+        display: inline;
+    }
+      </style>
+      </head>
+    <body>
+        <section>
+          <form action="" method="post">
+            <fieldset>
+                <h1>ORDER FORM</h1>
+            <fieldset class="inside">
+                <h1>Contact Information</h1>
+            <label class="top" for="fullname">Full Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="fullname" id="fullname" placeholder="Full Name"><br>
+              
+            <label class="top" for="address">Complete Address</label>&nbsp;
+            <input type="text" name="address" id="address" placeholder="Address"><br>
+
+            <label class="top" for="email">Email Adress</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="email" id="email" placeholder="Email Address"><br>
+
+            <label class="top" for="contact">Contact Number</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="contact" class="contact" placeholder="Contact Number"><br>
+
+            <div>
+                <p>Description hot to get to the place:<p>
+          <textarea name="message" id="message"></textarea>
+          </div>
+              </fieldset>  
+            </form>
+
+            <form action="" method="post">
+            <fieldset class="inside">
+            <h1>Food</h1>
+            <link rel="stylesheet" type="text/css">
+                <h3 class="order">Click the Pictures you want to order</h3>
+    <a href="#burger"><img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" 
+        alt="Burger Icon" class="burger" style="margin-left: 20%;"/></a>
+
+    <a href="#fries"><img src="https://cdn-icons-png.flaticon.com/512/1046/1046786.png"  
+        alt="Fries Icon" class="fries"/></a>
+
+    <a href="#drinks"><img src="https://cdn-icons-png.flaticon.com/512/4329/4329542.png"  
+        alt="Drinks Icon"  class="drinks"/></a>
+        </fieldset>
+        </form>
+ 
+          <form action="" method="post">
+            <fieldset class="inside">
+                <h1 id="burger">Burgers</h1>
+              
+                <h3 class="order">Customize your order</h3>
+                 <div class="center"> 
+                <img src="https://cdn-icons-png.flaticon.com/512/4649/4649129.png" class="icon"><input type="checkbox" name="singlepatty" ><label >Single Patty</label> <br>
+                <img src="https://as1.ftcdn.net/v2/jpg/01/24/18/58/1000_F_124185899_wegwzZ9gXakPbOasoedg6XLvpqHpX5mK.jpg" style="margin-top: 5%;" class="icon"><input type="checkbox" name="doublepatty" ><label >Double Patty</label><br>
+                <img src="https://cdn-icons-png.flaticon.com/512/7219/7219954.png" style="margin-top: 5%;" class="icon"><input type="checkbox" name="cheese" ><label >Cheese</label><br>
+                <img src="https://cdn-icons-png.flaticon.com/512/765/765618.png" style="margin-top: 5%;" class="icon"><input type="checkbox" name="coleslow" ><label>Coleslaw</label><br>
+                <img src="https://cdn-icons-png.flaticon.com/512/5223/5223641.png" style="margin-top: 5%;" class="icon"><input type="checkbox" name="tomato" ><label>Tomato </label><br>
+                <img src="https://cdn-icons-png.flaticon.com/512/3523/3523332.png" style="margin-top: 5%;" class="icon"><input type="checkbox" name="onion" ><label>Onion</label><br>
+                <img src="https://cdn-icons-png.flaticon.com/512/1390/1390934.png" style="margin-top: 5%;" class="icon"><input type="checkbox" name="cucumber" ><label>Cucumber</label><br>
+                <img src="https://cdn-icons-png.flaticon.com/512/1857/1857921.png" style="margin-top: 5%;" class="icon"><input type="checkbox" name="bacon" ><label>Bacon</label><br>
+               </div>
+                <h3 class="order">Choose Your Buns</h3>
+                <div class="bun">
+                <img src="https://cdn-icons-png.flaticon.com/512/6775/6775833.png" style="margin-left: 5%;" class="icon"><input type="radio" name="singlepatty" ><label >Honey Oat</label> 
+                <img src="https://cdn-icons-png.flaticon.com/512/2164/2164059.png" style="margin-left: 5%;" class="icon"><input type="radio" name="singlepatty" ><label >Wheat Bun</label> <br>
+                <img src="https://cdn-icons-png.flaticon.com/512/6775/6775822.png" style="margin-left: 5%; margin-top: 5%;" class="icon"><input type="radio" name="singlepatty" ><label >White Bun</label> 
+                <img src="https://cdn-icons-png.flaticon.com/512/1725/1725736.png" style="margin-left: 5%;" class="icon"><input type="radio" name="singlepatty" ><label >Sugar Free</label> 
+              </div>
+              <a href="#fries" class="end"><h2>Add Order</h2></a>
+              <a href="#checkout" class="end"><h2>Check out</h2></a>
+              </fieldset>  
+            </form>
+
+            <form action="" method="post">
+                <fieldset class="inside">
+                    <h1 id="fries">Fries</h1>
+                  
+                   <h3 class="order">Choose a Size</h3>
+                   <div class="center">
+                    <p>
+                        <img src="https://cdn-icons-png.flaticon.com/512/590/590717.png" class="icon"><label class="size">Sizes</label><br>
+                        <select>
+                          <option value>Small</option>
+                          <option value>Medium</option>
+                          <option value>Large</option>
+                        </select>
+                      </p>
+                    </div>
+                <div>
+                <h3 class="order">Flavor</h3>
+                <div class="bun">
+                <img src="https://www.clipartmax.com/png/middle/237-2371627_chile-monster-hot-bbq-box-all-you-need-for-a-new-mexican.png" style="margin-left: 20%;" class="icon">
+                <input type="radio" name="singlepatty" ><label >BBQ</label> 
+                <img src="https://cdn-icons-png.flaticon.com/512/1071/1071146.png" style="margin-left: 5%;" class="icon">
+                <input type="radio" name="singlepatty" ><label >Cheese</label><br>
+                <img src="https://cdn3.vectorstock.com/i/1000x1000/52/07/ceramic-pot-of-sour-cream-sauce-with-parsley-vector-11125207.jpg" style="margin-left: 30%; margin-top: 5%;" class="icon">
+                <input type="radio" name="singlepatty" ><label >Sour Cream</label><br>
+
+                <label class="top" for="address">Quantity:</label>
+                <input type="text" name="address" class="qty"><br>
+              </div>
+              <a href="#pasta" class="end"><h2>Add Order</h2></a>
+              <a href="#checkout" class="end"><h2>Check out</h2></a>
+              </fieldset>  
+              </form>
+                   
+                  
+                    
+                        <form action="" method="post">
+                          <fieldset class="inside">
+                              <h1 id="drinks">Drinks</h1>
+                              <h3 class="order">Choose Your Drinks</h3>
+                <div class="drinks">
+                <img src="https://www.freepnglogos.com/uploads/coca-cola-png-logo/coca-cola-logos-png-0.png" style="margin-left: 25%;" class="icon">
+                <img src="https://freepngimg.com/thumb/pepsi_logo/32192-5-pepsi-logo-transparent-image.png" style="margin-left: 20%;" class="icon"><br>
+                <input type="radio" name="soda" style="margin-left: 25%;" ><label >Coca-Cola</label> 
+                <input type="radio" name="soda" style="margin-left: 20%;" ><label >Pepsi</label><br>
+                <img src="https://www.freepnglogos.com/uploads/sprite-png-logo/news-sprite-logo-png-7.png" style="margin-left: 25%; margin-top: 10%;" class="icon">
+                <img src="https://e7.pngegg.com/pngimages/594/518/png-clipart-tea-lipton-brand-logo-tea-text-computer.png" style="margin-left: 20%;" class="icon"><br>
+                <input type="radio" name="soda" style="margin-left: 25%;" ><label >Sprite</label> 
+                <input type="radio" name="soda" style="margin-left: 20%;" ><label >Iced Tea</label> 
+              </div>
+              <h3 class="order">Choose a Size</h3>
+              <div class="center">
+               <p>
+                   <img src="https://media0.giphy.com/media/VeC4yhAEbBdNof4njB/200w.gif?cid=82a1493baeh1boshb93llb1xb61e7nlwrijxbkiq2md8yr95&rid=200w.gif&ct=s" class="icon">
+                   <select>
+                     <option value>Small</option>
+                     <option value>Medium</option>
+                     <option value>Large</option>
+                    </select><br>
+                   <label class="size" style="margin-left: 5%;">Sizes</label>
+                 </p>
+               </div>
+                              <div class="center">
+                                  <label class="top" for="address">Quantity:</label>
+                                  <input type="text" name="address" class="qty"><br>
+                              </div>
+                              <a href="#burger" class="end"><h2>Reset Order</h2></a>
+                              <a href="#checkout" class="end"><h2>Check out</h2></a>
+                              </fieldset>
+                              </form>
+
+                          <form action="" method="post">
+                            <fieldset class="inside">
+                                <h1 id="checkout">Check out</h1>
+                                <div>
+                                  <img src="https://media2.giphy.com/media/gk3qooQQqkSvSQLsOt/giphy.gif" style="margin-left: 15%; margin-top: 5%;" class="icons">
+                                  <img src="https://media2.giphy.com/media/Yobxs0qRSZXTJHFYCU/200w.gif" style="margin-left: 5%;" class="icons"><br>
+                                  <input type="radio" name="delivery" style="margin-left: 20%;" ><label >Delivery</label>
+                                  <input type="radio" name="delivery" style="margin-left: 20%;"><label >Pick-up</label> 
+                                </div>
+                                <a href="#burger" class="end"><h2>Reset Ordert</h2></a>
+                                <input type="submit">
+                                <div>
+                                  <p>Feedback for ordering form<p>
+                              <textarea name="message" id="message"></textarea>
+                              </div>
+                              </fieldset>  
+                            </form>
+                        </fieldset>
+                        
